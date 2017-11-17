@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Expires" CONTENT="-1">
+		<meta http-equiv="Cache-Control" CONTENT="no-cache">
+		<meta http-equiv="Pragma" CONTENT="no-cache">
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<title>首页</title>
+	</head>
+
+	<body>
+		<div class="all">
+			<div class="fill_block">
+				<ul>
+
+					<li class="fill_items">
+						<div class="label_add">上传截图</div>
+						<img src="images/icon-add.png" class="add" />
+						<span class="success">上传成功</span>
+					</li>
+
+					<li class="fill_items">
+						<div class="label">“邮储银行”APP登录手机号码</div>
+						<input type="number" oninput="if(value>11) value=value.slice(0,11);" />
+					</li>
+
+					<li class="fill_items">
+						<div class="label">收货人</div>
+						<input type="text" />
+					</li>
+
+					<li class="fill_items">
+						<div class="label">收货人手机号码</div>
+						<input type="text" />
+					</li>
+
+					<li class="fill_items">
+						<div class="label">所在地区</div>
+						<div class="select_block">
+							<select>
+								<option>广东省</option>
+								<option value="0001">北京</option>
+								<option>广东省2</option>
+							</select>
+							<select>
+								<option>广州市广州市</option>
+							</select>
+							<select>
+								<option>天河区</option>
+							</select>
+						</div>
+					</li>
+
+					<li class="fill_items">
+						<div class="label">详细地址</div>
+						<input type="text" />
+					</li>
+
+				</ul>
+        
+        <div class="fill_gift">礼品：生态大米（1KG）</div>
+				<div class="fill_btn_block">
+					<input type="button" value="确认提交" class="btn_insure"/>
+					<input type="reset" value="清空重置" class="btn_reset"/>
+				</div>
+
+			</div>
+
+		</div>
+		
+		
+		<script>
+			$("option[text='北京']").prop("selected",true);
+		</script>
+	</body>
+
+</html>
